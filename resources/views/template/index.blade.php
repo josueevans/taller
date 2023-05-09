@@ -4,7 +4,7 @@
   <!-- ***** Main Banner Area Start ***** -->
   <section class="section main-banner" id="top" data-section="section1">
     <video autoplay muted loop id="bg-video">
-        <source src="{!! asset('estilo/assets/images/course-video.mp4') !!}" type="video/mp4" />
+        <source src="https://taller-production.up.railway.app/estilo/assets/images/course-video.mp4" type="video/mp4" />
     </video>
 
     <div class="video-overlay header-text">
@@ -84,7 +84,7 @@
             <article id='tabs-1'>
               <div class="row">
                 <div class="col-md-6">
-                  <img src="{!! asset('estilo/assets/images/choose-us-image-01.png') !!}" alt="">
+                  <img src="https://taller-production.up.railway.app/estilo/assets/images/choose-us-image-01.png" alt="">
                 </div>
                 <div class="col-md-6">
                   <h4>Objetivo</h4>
@@ -95,7 +95,7 @@
             <article id='tabs-2'>
               <div class="row">
                 <div class="col-md-6">
-                  <img src="{!! asset('estilo/assets/images/choose-us-image-02.png') !!}" alt="">
+                  <img src="https://taller-production.up.railway.app/estilo/assets/images/choose-us-image-02.png" alt="">
                 </div>
                 <div class="col-md-6">
                   <h4>Oportunidades</h4>
@@ -106,7 +106,7 @@
             <article id='tabs-3'>
               <div class="row">
                 <div class="col-md-6">
-                  <img src="{!! asset('estilo/assets/images/choose-us-image-03.png') !!}" alt="">
+                  <img src="https://taller-production.up.railway.app/estilo/assets/images/choose-us-image-03.png" alt="">
                 </div>
                 <div class="col-md-6">
                   <h4>Enfoque</h4>
@@ -121,7 +121,7 @@
   </div>
 </section>
 
-<section class="section courses" id="section4">
+{{-- <section class="section courses" id="section4">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-12">
@@ -247,5 +247,5 @@
       </div>
     </div>
   </div>
-</section>
+</section> --}}
 @endsection()
