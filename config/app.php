@@ -54,9 +54,9 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://localhost'),
+    // 'url' => env('APP_URL', 'http://localhost'),
     // 'url' => 'http://192.168.1.14:8000',
-
+    'url' => env('APP_URL', 'https://taller-production.up.railway.app'),
     'asset_url' => env('ASSET_URL'),
 
     /*
