@@ -31,10 +31,10 @@
         integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
     <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="{!! asset('estilo/assets/css/fontawesome.css') !!}">
-    <link rel="stylesheet" href="{!! asset('estilo/assets/css/templatemo-grad-school.css') !!}">
-    <link rel="stylesheet" href="{!! asset('estilo/assets/css/owl.css') !!}">
-    <link rel="stylesheet" href="{!! asset('estilo/assets/css/lightbox.css') !!}">
+    <link rel="stylesheet" href="https://taller-production.up.railway.app/estilo/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="https://taller-production.up.railway.app/estilo/assets/css/templatemo-grad-school.css">
+    <link rel="stylesheet" href="https://taller-production.up.railway.app/estilo/assets/css/owl.css">
+    <link rel="stylesheet" href="https://taller-production.up.railway.app/estilo/assets/css/lightbox.css">
 </head>
 
 <body>
