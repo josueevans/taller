@@ -306,7 +306,7 @@
                                     dataType: 'json',
                                     success: function(response) {
                                         // Maneja la respuesta del servidor
-                                        alert('Se agregó correctamente a favoritos');
+                                        // alert('Se agregó correctamente a favoritos');
                                     },
                                     error: function(error) {
                                         // alert();
@@ -331,7 +331,7 @@
                                     dataType: 'json',
                                     success: function(response) {
                                         // Maneja la respuesta del servidor
-                                        alert('Se eliminó de tus favoritos');
+                                        // alert('Se eliminó de tus favoritos');
                                     },
                                     error: function(error) {
                                         // alert();
