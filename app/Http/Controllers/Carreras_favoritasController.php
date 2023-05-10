@@ -16,7 +16,9 @@ class Carreras_favoritasController extends Controller
         $datos = $request->all();
         Carreras_favoritas::create($datos);
 
-        return response()->json();
+        return response()->json([
+            // 'mensaje' => 'El formulario ha sido enviado correctamente'
+        ]);
 
     }
 
@@ -37,6 +39,8 @@ class Carreras_favoritasController extends Controller
         // $pais->status = 0;
         // $pais->save();
 
-        return response()->json();
+        return response()->json([
+            // 'mensaje' => 'El formulario ha sido enviado correctamente'
+        ]);
     }
 }
