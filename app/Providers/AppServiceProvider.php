@@ -26,8 +26,19 @@ class AppServiceProvider extends ServiceProvider
     //     //
     // }
 
-    public function boot()
+    
+    // public function boot(): void
+    // {
+    //     if (env('APP_ENV') !== 'local') {
+    //         $this->app['request']->server->set('HTTPS', true);
+    //     }
+    // }
+
+    public function boot(): void
     {
         Paginator::useBootstrap();
+        if (env('APP_ENV') !== 'local') {
+            $this->app['request']->server->set('HTTPS', true);
+        }
     }
 }
