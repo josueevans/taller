@@ -62,7 +62,8 @@
                 }
             });
             $.ajax({
-                url: "{{ route('graficas-carreras') }}",
+                // url: "{{ route('graficas-carreras') }}",
+                url = "https://taller-production.up.railway.app/graficas/carreras2",
                 type: "GET",
                 dataType: 'json',
                 success: function(data1) {
