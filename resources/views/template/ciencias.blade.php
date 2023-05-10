@@ -269,7 +269,7 @@
                                     'X-CSRF-Token': $('meta[name=_token]').attr('content')
                                 }
                             });
-                            var urlServidor = "/tecnologias"; // especifica la URL del servidor en una variable
+                            var urlServidor = "/ciencias"; // especifica la URL del servidor en una variable
                             $("#mi-boton-agregar").click(function() {
                                 $.ajax({
                                     url: urlServidor, // utiliza la variable para especificar la URL
