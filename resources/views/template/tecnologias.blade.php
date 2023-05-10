@@ -269,7 +269,7 @@
                                     'X-CSRF-Token': $('meta[name=_token]').attr('content')
                                 }
                             });
-                            var urlServidor = "/tecnologias"; // especifica la URL del servidor en una variable
+                            var urlServidor = "https://taller-production.up.railway.app/tecnologias"; // especifica la URL del servidor en una variable
                             $("#mi-boton-agregar").click(function() {
                                 $.ajax({
                                     url: urlServidor, // utiliza la variable para especificar la URL
@@ -295,7 +295,8 @@
                                 // Previene la recarga de la página al enviar el formulario
                                 event.preventDefault();
                                 // Obtiene la URL de la acción del formulario
-                                var url = $('#mi-formulario').attr('action');
+                                // var url = $('#mi-formulario').attr('action');
+                                var url = "https://taller-production.up.railway.app/algo";
                                 // Obtiene los datos del formulario
                                 var formData = $('#mi-formulario').serialize();
                                 // Envía la solicitud AJAX al servidor
@@ -320,7 +321,8 @@
                                 // Previene la recarga de la página al enviar el formulario
                                 event.preventDefault();
                                 // Obtiene la URL de la acción del formulario
-                                var url = $('#mi-formulario-delete').attr('action');
+                                // var url = $('#mi-formulario-delete').attr('action');
+                                var url = "https://taller-production.up.railway.app/algo-delete";
                                 // Obtiene los datos del formulario
                                 var formData = $('#mi-formulario-delete').serialize();
                                 // Envía la solicitud AJAX al servidor
