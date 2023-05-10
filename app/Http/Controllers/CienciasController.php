@@ -21,7 +21,7 @@ class CienciasController extends Controller
             ->orderBy('nombre')->get();
 
         $carreraSeleccionada = null;
-        return view('template.tecnologias', [
+        return view('template.ciencias', [
             'carreras' => $carreras,
             'carreraSeleccionada' => $carreraSeleccionada,
         ]);
