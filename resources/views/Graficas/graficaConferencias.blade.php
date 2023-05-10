@@ -47,7 +47,7 @@
             });
             $.ajax({
                 // url: "{{ route('graficas-conferencias') }}",
-                url = "https://taller-production.up.railway.app/graficas/conferencias2",
+                url: "https://taller-production.up.railway.app/graficas/conferencias2",
                 type: "GET",
                 dataType: 'json',
                 success: function(data1) {
