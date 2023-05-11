@@ -20,7 +20,7 @@ class Carreras_imagenesController extends Controller
      */
     public function index()
     {
-        $carreras_imagenes = Carreras_imagenes::where('status', 1)->paginate(3);
+        $carreras_imagenes = Carreras_imagenes::where('status', 1)->paginate(10);
         return view('Carreras_imagenes.index')->with('carreras_imagenes', $carreras_imagenes);
     }
 

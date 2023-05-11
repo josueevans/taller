@@ -18,7 +18,7 @@ class Universidades_imagenesController extends Controller
      */
     public function index()
     {
-        $universidades_imagenes = Universidades_imagenes::where('status', 1)->paginate(3);
+        $universidades_imagenes = Universidades_imagenes::where('status', 1)->paginate(10);
         return view('Universidades_imagenes.index')->with('universidades_imagenes', $universidades_imagenes);
     }
 
