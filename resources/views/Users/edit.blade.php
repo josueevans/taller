@@ -39,10 +39,10 @@
         {!! Form::text('username', $user->username, ['class' => 'form-control', 'placeholder' => 'Ingrese un username']) !!}
     </div>
 
-    <div class="form-group my-2">
+    {{-- <div class="form-group my-2">
         {!! Form::label('password', 'Contraseña: ') !!}
         {!! Form::text('password', $user->password, ['class' => 'form-control', 'placeholder' => 'Ingrese la contraseña']) !!}
-    </div>
+    </div> --}}
 
     <div class="form-group my-2">
         {!! Form::label('telefono', 'Teléfono del user') !!}

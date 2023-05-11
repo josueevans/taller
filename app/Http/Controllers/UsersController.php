@@ -111,7 +111,7 @@ class UsersController extends Controller
     {
         $datos = $request->all();
         $user = Users::find($id);
-        $datos['password'] = Hash::make($request->password);
+        // $datos['password'] = Hash::make($request->password);
         $user->update($datos);
         return redirect('/users');
     }
