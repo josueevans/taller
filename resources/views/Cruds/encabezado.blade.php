@@ -107,9 +107,37 @@
                                 Graficas
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="imagenesDropdown">
-                                <li><a class="dropdown-item" href="{{route('graf-carreras')}}">Grafica de carreras favoritas</a>
+                                <li><a class="dropdown-item" href="{{ route('graf-carreras') }}">Grafica de carreras
+                                        favoritas</a>
                                 </li>
-                                <li><a class="dropdown-item" href="{{route('graf-conferencias')}}">Grafica de asistencia a conferencias</a></li>
+                                <li><a class="dropdown-item" href="{{ route('graf-conferencias') }}">Grafica de
+                                        asistencia a conferencias</a></li>
+                            </ul>
+                        </li>
+                    @endif
+                    @if (Auth::user()->id_rol === 2)
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="tablasDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Tablas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="tablasDropdown">
+                                <li><a class="dropdown-item" href="{!! asset('grupos') !!}">Grupos</a></li>
+                                <li><a class="dropdown-item" href="{!! asset('conferencias') !!}">Conferencias</a></li>
+                                <li><a class="dropdown-item" href="{!! asset('users') !!}">Usuarios</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="imagenesDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Graficas
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="imagenesDropdown">
+                                <li><a class="dropdown-item" href="{{ route('graf-carreras') }}">Grafica de carreras
+                                        favoritas</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ route('graf-conferencias') }}">Grafica de
+                                        asistencia a conferencias</a></li>
                             </ul>
                         </li>
                     @endif

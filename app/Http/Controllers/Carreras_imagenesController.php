@@ -50,20 +50,13 @@ class Carreras_imagenesController extends Controller
         );
         if ($request->hasFile("imagen")) {
             $imagen = $request->file("imagen");
-            // $nombreImagen = Str::slug($request->id_carrera) ."_".$imagen->getClientOriginalName()."." . $imagen->guessExtension();
-            // $nombreImagen = Str::slug($request->id_carrera) . "_" . $imagen->getClientOriginalName();
             $nombreImagen = Str::slug($id) . "_" . Str::slug($request->id_carrera) . "_" . $imagen->getClientOriginalName();
             //Ruta de la imagen que subimos
             $ruta = public_path("images/carreras_imagenes/");
             copy($imagen->getRealPath(), $ruta . $nombreImagen);
-            // $datos->ruta = "images/carreras_imagenes/" . $nombreImagen;
             $ruta2 = "images/carreras_imagenes/" . $nombreImagen;
         }
-
-        // $datos->carrera_id = $request->id_carrera;
         $datos->status = $request->status;
-
-        // $datos->save();
         DB::table('carreras_imagenes')
             ->where('id', $id)
             ->update(['ruta' => $ruta2, 'status' => $request->status]);
