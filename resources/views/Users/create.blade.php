@@ -41,8 +41,8 @@
     </div>
 
     <div class="form-group my-2">
-        {!! Form::label('password', 'Contraseña: ') !!}
-        {!! Form::password('password', null, ['class' => 'form-control', 'placeholder' => 'Ingrese la contraseña']) !!}
+        <input type="password" name="password" class="form-control"
+        placeholder="Contraseña"/>
     </div>
 
     <div class="form-group my-2">
